@@ -1,0 +1,198 @@
+{
+    "name": "suite-02-parsedicom-file-all-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/common-test/iterator-test",
+    "constructorName": "IteratorTest_Constructor",
+    "methodName": "pF_Iterator",
+    "scheduleSubs": "SERIES",
+    "parms": {
+        "salutation": "Hello suite-02-parsedicom-file-all-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}",
+        "iterator": {
+            "rangeParm": "AllDicomFullFilenames",
+            "eachParm":  "OneDicomFullFilename",
+            "endidx":    10000
+        }
+    },
+    "imports": [
+        {
+            "name": "paths-import",
+            "configurationPath": "@testspath/dicom/dicom-parser/parms-dicomparser-testfiles.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "required": [
+        {
+            "name": "suite-02-parsedicom-file-all-test-require-AllDicomFullFilenames",
+            "parmNames": [
+                "AllDicomFullFilenames"
+            ],
+            "suppliers": [
+                {
+                    "name": "suite-02-parsedicom-file-all-test-require-AllDicomFullFilenames-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/directory-test",
+                    "constructorName": "Directory_Constructor",
+                    "methodName": "pF_Directory",
+                    "scheduleSubs": "SERIES",
+                    "parms": {
+                        "directory": {
+                            "basePathParmName":        "parmsfordicomparsertestfiles.baseDirectoryForDicomParserTestFiles",
+                            "basePath":                null,
+                            "dirPathParmName":         "parmsfordicomparsertestfiles.dirwithdicomfilesok",
+                            "dirPath":                 null,
+                            "fullDirPathParmName":     null,
+                            "fullDirPath":             null,
+                            "expandHome":              true,
+
+                            "tree":                    true,
+                            "treeDirs":                true,
+                            "treeLevel":               -1,
+                            "treeFiles":               true,
+
+                            "rmDir":                   false,
+                            "rmDirContentsDirs":       false,
+                            "rmDirContentsFiles":      false,
+                            "failIfDirNotEmpty":       false,
+
+                            "createDir":               false,
+                            "createDirMode":           "0770",
+                            "failIfDirNotExists":      true,
+                            "failIfDirAlreadyExists":  false,
+
+                            "dumppaths":               false,
+                            "dumpstats":               false,
+                            "dumpparseresult":         false,
+                            "dumpreaddirs":            false,
+                            "dumpdircontents":         false,
+                            "dumptree":                false,
+                            "dumptreeindented":        false,
+                            "dumptreestats":           false,
+                            "dumpremovals":            false,
+                            "dumpmkdirs":              false
+                        }
+                    },
+                    "exports": [
+                        {
+                            "name": "suite-02-parsedicom-file-all-test-require-AllDicomFullFilenames-supplier-export-AllDicomFullFilenames",
+                            "exportAs": "AllDicomFullFilenames",
+                            "exportOrigin": "TEST",
+                            "exportSource": "_v_FilesInTreePaths",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "subs": [
+        {
+            "name": "suite-02-parsedicom-file-all-test-sub-retrieveDicomFileContents",
+            "runnable": true,
+            "expectSuccess": true,
+            "module": "@cmppath/common-test/fileaccess-test",
+            "constructorName": "FileAccess_Constructor",
+            "methodName": "pF_FileAccess",
+            "scheduleSubs": "SERIES",
+            "parms": {
+                "fileaccess": {
+
+                    "usePayloadHolder":        true,
+
+                    "basePathParmName":        null,
+                    "basePath":                null,
+                    "dirPathParmName":         null,
+                    "dirPathParmName":         null,
+                    "dirPath":                 null,
+                    "filenameParmName":        "OneDicomFullFilename",
+                    "filename":                null,
+                    "fullFilePathParmName":    null,
+                    "fullFilePath":            null,
+                    "expandHome":              false,
+
+                    "fileEncoding":            "BINARY",
+
+                    "readFileContents":        true,
+
+                    "unlinkFile":              false,
+                    "touchFile":               false,
+                    "createFile":              false,
+                    "createFileMode":          "0660",
+                    "truncateFile":            false,
+                    "appendToFile":            false,
+                    "writeFileContents":       false,
+
+                    "contentsToWriteParmName": null,
+
+                    "failIfFileNotExists":     false,
+                    "failIfFileAlreadyExists": false,
+                    "failIfFileEmpty":         false,
+                    "failIfFileNotEmpty":      false,
+
+                    "dumppaths":               false,
+                    "dumpstats":               false,
+                    "dumpparseresult":         false,
+                    "dumpfilecontents":        false,
+                    "dumpremovals":            false,
+                    "dumpcreatefile":          false,
+                    "dumpreads":               false,
+                    "dumpwrites":              false,
+                    "dumpcontenttowrite":      false
+                }
+            },
+            "exports": [
+                {
+                    "name": "suite-02-parsedicom-file-all-test-sub-retrieveDicomFileContents-export-DicomFileContents",
+                    "exportAs": "DicomFileContents",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_FileContentsBefore",
+                    "exportTarget": "..",
+                    "exportWhen": "OK"
+                },
+                {
+                    "name": "suite-02-parsedicom-file-all-test-sub-retrieveDicomFileContents-export-SourceName",
+                    "exportAs": "SourceName",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_BaseNameOfUsedFullFilePath",
+                    "exportTarget": "..",
+                    "exportWhen": "OK"
+                },
+                {
+                    "name": "suite-02-parsedicom-file-all-test-sub-retrieveDicomFileContents-export-SourceFullName",
+                    "exportAs": "SourceFullName",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_UsedFullFilePath",
+                    "exportTarget": "..",
+                    "exportWhen": "OK"
+                }
+            ]
+        },
+        {
+            "name": "suite-02-parsedicom-file-all-test-sub-parseDicomFileContents",
+            "runnable": true,
+            "expectSuccess": true,
+            "module": "@cmppath/dicom-test/dicomparser-test",
+            "constructorName": "DicomParser_Constructor",
+            "methodName": "pF_DicomParser",
+            "scheduleSubs": "SERIES",
+            "parms": {
+                "dicomparser": {
+                    "sourceName":          "~SourceName",
+                    "sourceFullName":      "~SourceFullName",
+                    "dicomBytes":          "~DicomFileContents",
+                    "extractImage":        false,
+                    "usePayloadHolder":    true,
+
+                    "dump_sourceName":     true,
+                    "dump_instanceUID":    false,
+                    "dump_dataset":        false,
+                    "dump_datasetHexkeys": null,
+                    "dump_datasetKeys":    null
+                }
+            }
+        }
+    ]
+}
+

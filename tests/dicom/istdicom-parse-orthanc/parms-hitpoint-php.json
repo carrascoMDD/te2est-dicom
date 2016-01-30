@@ -1,0 +1,12 @@
+{
+    "name": "parms-hitpoint-php",
+    "parms": {
+        "hitpointphp": {
+            "baseURLphp": "http://paragon.desknova.com/php/commons",
+            "NOTTOUSE_exampleFullURL": "http://paragon.desknova.com/php/commons/solrQuery/consultaSolrNew.php?_dc=1436921057943&serverHostname=solr.desknova.com&serverPort=8983&ruta=solr%2Fmia_dcm&todo=false&q=TIPOFICHERO_scustom%3ADICOM%20Study&limit=25&rows=25&caller=getIndexedFiles&comboFilterProperty=&comboFilterValue=&query=&deleteRecords=false&page=1&start=0&lang=en"
+        }
+    }
+}
+
+
+

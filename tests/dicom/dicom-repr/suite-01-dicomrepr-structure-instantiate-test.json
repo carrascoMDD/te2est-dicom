@@ -1,0 +1,213 @@
+{
+    "name": "suite-01-dicomrepr-structure-instantiate-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/dicom-test/dicom-repr/dicomrepr-test",
+    "constructorName": "DicomReprTest_Constructor",
+    "methodName": "pF_DicomReprTest",
+    "scheduleSubs": "SERIES",
+    "parms": {
+        "salutation": "Hello suite-01-dicomrepr-structure-instantiate-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}",
+        "dicomrepr": {
+            "root":              null,
+            "traversal":         null,
+            "marshallRoot":      false,
+            "marshallTraversed": false,
+            "marshallCreated":   true,
+            "dump_Creations":    true,
+            "dump_CreateErrors": true,
+            "dump_Marshalled":   true,
+            "createSpecs": [
+                {
+                    "roleInParent": null,
+                    "dicomStructureType": "DIRECTORY",
+                    "factoryParms": { "id": "DIRECTORY_id_01"},
+                    "factorySubs": [
+                        {
+                            "roleInParent": "patients",
+                            "dicomStructureType": "PATIENT",
+                            "factoryParms": { "id": "PATIENT_id_01"},
+                            "factorySubs": [
+                                {
+                                    "roleInParent": "studies",
+                                    "dicomStructureType": "STUDY",
+                                    "factoryParms": { "id": "STUDY_id_01"},
+                                    "factorySubs": [
+                                        {
+                                            "roleInParent": "series",
+                                            "dicomStructureType": "SERIES",
+                                            "factoryParms": { "id": "SERIES_id_01"},
+                                            "factorySubs": [
+                                                {
+                                                    "roleInParent": "instances",
+                                                    "dicomStructureType": "INSTANCE",
+                                                    "factoryParms": { "id": "INSTANCE_id_01"},
+                                                    "factorySubs": [
+                                                        {
+                                                            "roleInParent": "elements",
+                                                            "dicomStructureType": "ELEMENT",
+                                                            "factoryParms": { "tag": "(1234,5678)", "tagName": "TagName(1234,5678)"}
+                                                        },
+                                                        {
+                                                            "roleInParent": "elements",
+                                                            "dicomStructureType": "ELEMENT",
+                                                            "factoryParms": { "tag": "(2345,6789)", "tagName": "TagName(2345,6789)"},
+                                                            "factorySubs": [
+                                                                {
+                                                                    "roleInParent": "items",
+                                                                    "dicomStructureType": "INSTANCE",
+                                                                    "factoryParms": { "id": "INSTANCE_(2345,6789)_ITEM_id_01"},
+                                                                    "factorySubs": null
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "roleInParent": "elements",
+                                                            "dicomStructureType": "ELEMENT",
+                                                            "factoryParms": { "tag": "(3456,7890)", "tagName": "TagNameForTest01"},
+                                                            "factorySubs": [
+                                                                {
+                                                                    "roleInParent": "fragments",
+                                                                    "dicomStructureType": "FRAGMENT",
+                                                                    "factoryParms": { "index": "FRAGMENT_(3456,7890)_index_01"},
+                                                                    "factorySubs": null
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "exports": [
+        {
+            "name": "suite-01-dicomrepr-structure-instantiate-test-export-DicomReprMarshalled",
+            "exportAs": "DicomReprMarshalled",
+            "exportOrigin": "TEST",
+            "exportSource": "_v_Marshalled",
+            "exportTarget": ".",
+            "exportWhen": "EXBEFORESUBS"
+        }
+    ],
+    "subs": [
+        {
+            "name": "suite-01-dicomrepr-structure-instantiate-test-sub-comparemarshalled",
+            "runnable": true,
+            "expectSuccess": true,
+            "module": "@cmppath/common-test/compare-test",
+            "constructorName": "Compare_Constructor",
+            "methodName": "pF_Compare",
+            "parms": {
+                "compare": {
+                    "left":  "~DicomReprMarshalled",
+
+                    "failIfDifferent":        true,
+
+                    "expectedLeftToRightDeltas": null,
+                    "expectedRightToLeftDeltas": null,
+
+                    "compareLeftToRight":     true,
+                    "compareRightToLeft":     true,
+                    "leftIncludedKeys":       null,
+                    "rightIncludedKeys":      null,
+                    "leftExcludedKeys":       null,
+                    "rightExcludedKeys":      null,
+                    "leftRules":              null,
+                    "rightRules":             null,
+                    "leftToRightKeysGen":     null,
+                    "rightToLeftKeysGen":     null,
+
+                    "dump_left":              true,
+                    "dump_right":             true,
+                    "dump_leftToRightDeltas": true,
+                    "dump_rightToLeftDeltas": true,
+                    "right":[
+                        {
+                            "dicomStructureType": "DIRECTORY",
+                            "id": null,
+                            "patients": [
+                                {
+                                    "dicomStructureType": "PATIENT",
+                                    "id": "PATIENT_id_01",
+                                    "elements": [
+                                        {
+                                            "dicomStructureType": "STUDY",
+                                            "id": "STUDY_id_01",
+                                            "series": [
+                                                {
+                                                    "dicomStructureType": "SERIES",
+                                                    "id": "SERIES_id_01",
+                                                    "instances": [
+                                                        {
+                                                            "dicomStructureType": "INSTANCE",
+                                                            "id": "INSTANCE_id_01",
+                                                            "elements": [
+                                                                {
+                                                                    "dicomStructureType": "ELEMENT",
+                                                                    "tag": "(1234,5678)",
+                                                                    "tagName": "TagName(1234,5678)",
+                                                                    "valueLength": null,
+                                                                    "VR": null,
+                                                                    "value": null,
+                                                                    "valueType": null
+                                                                },
+                                                                {
+                                                                    "dicomStructureType": "ELEMENT",
+                                                                    "tag": "(2345,6789)",
+                                                                    "tagName": "TagName(2345,6789)",
+                                                                    "valueLength": null,
+                                                                    "VR": null,
+                                                                    "value": null,
+                                                                    "valueType": null,
+                                                                    "items": [
+                                                                        {
+                                                                            "dicomStructureType": "INSTANCE",
+                                                                            "id": "INSTANCE_(2345,6789)_ITEM_id_01",
+                                                                            "elements": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "dicomStructureType": "ELEMENT",
+                                                                    "tag": "(3456,7890)",
+                                                                    "tagName": "TagNameForTest01",
+                                                                    "valueLength": null,
+                                                                    "VR": null,
+                                                                    "value": null,
+                                                                    "valueType": null,
+                                                                    "fragments": [
+                                                                        {
+                                                                            "dicomStructureType": "FRAGMENT",
+                                                                            "index": "FRAGMENT_(3456,7890)_index_01",
+                                                                            "offset": null,
+                                                                            "valueLength": null,
+                                                                            "basicOffset": null
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "scheduleSubs": "SERIES"
+        }
+    ]
+}
+

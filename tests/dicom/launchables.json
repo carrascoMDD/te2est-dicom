@@ -1,0 +1,5 @@
+[
+    "@testspath/dicom/dicom-parser/launchables.json",
+    "@testspath/dicom/dicom-repr/launchables.json"
+
+]

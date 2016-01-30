@@ -1,0 +1,10 @@
+{
+    "name": "parms-directory-dicomcache-incremental",
+    "parms": {
+        "parmsfordirectorydicomdownloadedfiles": {
+            "baseDirectoryIstStudyInstanceItems":    "~/ISTdicomcacheincremental/queryPHP/ISTstudyInstanceItems",
+            "directoryIstStudyInstanceItemImages":   "ISTstudyInstanceItemImages"
+        }
+    }
+}
+

@@ -1,0 +1,13 @@
+{
+    "name": "parms-hitpoint-storage",
+    "parms": {
+        "hitpointstorage": {
+            "baseURLstorage": "http://paragon.desknova.com/storage",
+            "NOTTOUSE_exampleFullURL": "http://paragon.desknova.com/storage/MAMAS/Composer/Pendientes/Analizados/Comp_Composer_MAMA_Kristien_Sargent_68.dcm"
+        }
+    }
+}
+
+
+
+

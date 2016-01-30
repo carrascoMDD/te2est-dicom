@@ -1,0 +1,13 @@
+{
+    "name": "parms-hitpoint-storage",
+    "parms": {
+        "hitpointstorage": {
+            "baseURLstorage": "http://istres.te2est.org/storage",
+            "NOTTOUSE_exampleFullURL": "http://istres.te2est.org/storage/MAMAS/Composer/Pendientes/Analizados/Comp_Composer_MAMA_Kristien_Sargent_68.dcm"
+        }
+    }
+}
+
+
+
+

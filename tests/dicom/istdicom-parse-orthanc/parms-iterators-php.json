@@ -1,0 +1,17 @@
+{
+    "name": "parms-iterators-php",
+    "parms": {
+        "istdicomquerylist": {
+            "studyItemsEndIdx":         2,
+            "studyInstanceItemsEndIdx": 2
+        },
+        "istdicomquerydownload": {
+            "studyItemsEndIdx":         2,
+            "studyInstanceItemsEndIdx": 2
+        },
+        "istdicomquerywrite": {
+            "studyItemsEndIdx":         2,
+            "studyInstanceItemsEndIdx": 2
+        }
+    }
+}

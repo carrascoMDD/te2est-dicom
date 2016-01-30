@@ -1,0 +1,10 @@
+{
+    "name": "parms-dicomparser-testfiles",
+    "parms": {
+        "parmsfordicomparsertestfiles": {
+            "baseDirectoryForDicomParserTestFiles": "~/dicomparserTestFiles",
+            "dirwithdicomfilesok":                  "dicomfilesok"
+        }
+    }
+}
+

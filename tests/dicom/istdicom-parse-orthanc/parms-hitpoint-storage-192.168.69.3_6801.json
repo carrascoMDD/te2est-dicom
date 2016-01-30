@@ -1,0 +1,13 @@
+{
+    "name": "parms-hitpoint-storage",
+    "parms": {
+        "hitpointstorage": {
+            "baseURLstorage": "http://192.168.69.3:8601/storage",
+            "NOTTOUSE_exampleFullURL": "http:///192.168.69.3:8601/storage/MAMAS/Composer/Pendientes/Analizados/Comp_Composer_MAMA_Kristien_Sargent_68.dcm"
+        }
+    }
+}
+
+
+
+

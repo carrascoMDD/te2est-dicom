@@ -1,0 +1,5 @@
+[
+    "@testspath/dicom/dicom-repr/suite-01-dicomrepr-structure-instantiate-test.json",
+    "@testspath/dicom/dicom-repr/suite-02-dicomrepr-structure-instantiate-withroot-test.json",
+    "@testspath/dicom/dicom-repr/suite-03-dicomrepr-structure-instantiate-traversefromroot-test.json"
+]

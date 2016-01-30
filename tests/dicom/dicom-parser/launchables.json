@@ -1,0 +1,4 @@
+[
+    "@testspath/dicom/dicom-parser/suite-01-parsedicom-file-one-test.json",
+    "@testspath/dicom/dicom-parser/suite-02-parsedicom-file-all-test.json"
+]

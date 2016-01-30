@@ -1,0 +1,17 @@
+{
+    "name": "parms-iterators-php-lots",
+    "parms": {
+        "istdicomquerylist": {
+            "studyItemsEndIdx":         10000,
+            "studyInstanceItemsEndIdx": 10000
+        },
+        "istdicomquerydownload": {
+            "studyItemsEndIdx":         10000,
+            "studyInstanceItemsEndIdx": 10000
+        },
+        "istdicomquerywrite": {
+            "studyItemsEndIdx":         10000,
+            "studyInstanceItemsEndIdx": 10000
+        }
+    }
+}
